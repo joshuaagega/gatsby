@@ -14,5 +14,30 @@ module.exports = {
     person: {name: 'peter', age: 32},
   }
   ,
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [`gatsby-plugin-styled-components`,
+  `gatsby-transformer-sharp`,
+   `gatsby-plugin-sharp`,
+   {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+ {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ya43su4g5v2h`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `tAHg5oVTGPaRmwXkjFLaJbpl_ofs0WPVEDcOANp0vCg`,
+      },
+    },
+],
 }
