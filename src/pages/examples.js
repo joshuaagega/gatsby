@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Header from '../examples/header'
 import HeaderStatic from '../examples/HeaderStatic'
-import { grapql } from 'gatsby'
+
 
 
 const examples = ({data}) => {

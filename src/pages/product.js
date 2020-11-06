@@ -16,7 +16,7 @@ const ComponentName = ({ data }) => {
           return <article key={producto.id}>
               <Image fluid={producto.image.fluid} alt={producto.title}></Image>
       <h3>{producto.title}<span>${producto.price}</span></h3>
-      <Link to= {`/porducts/${producto.slug}`}>more details</Link>
+      <Link to= {`/products/${producto.slug}`}>more details</Link>
           </article>
       })}
     </section>

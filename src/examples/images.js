@@ -33,7 +33,7 @@ const Images = () => {
       </article>
       <article className="single-image">
         <h3>Fixed Image/Blur</h3>
-        {/* `<Image fixed={data.fixed.childImageSharp.fixed}/>` */}
+        
       </article>
       <article className="single-image">
         <h3>Fluid Image/Svg</h3>
